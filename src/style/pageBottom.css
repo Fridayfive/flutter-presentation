@@ -1,0 +1,16 @@
+.page_bottom {
+    /* height: 400px; */
+    margin-top: 60px;
+    background-color: #504646;
+    width: 100%
+}
+
+.page_bottom img {
+    height: 80px;
+    width: 80px;
+    /* margin-bottom: 30px */
+}
+
+.page_bottom div span {
+    font-size: 15px
+}

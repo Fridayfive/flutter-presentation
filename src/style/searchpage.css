@@ -1,0 +1,45 @@
+.search_page {
+    /* text-align: center; */
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 100%
+}
+
+.search_logo {
+    margin: 0 auto;
+}
+
+.search_page img {
+    height: 18.75rem;
+    width: 18.75rem
+}
+
+.search_input_warp {
+    height: 12.5rem;
+}
+
+.search_input_warp input {
+    margin: 1.625rem 1.625rem;
+    height: 2.3rem;
+    width: 30.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+.search_input_warp div a {
+    margin-top: .9375rem;
+    display: block;
+    font-size: 2rem;
+    /* width: 10rem; */
+    text-align: center
+}
+
+.serach_button {
+    width: 150px;
+    margin: 0 auto;
+    border: 1px solid #0e1850;
+    background-color: #0e1850;
+    border-radius: 20px;
+    display: block;
+}

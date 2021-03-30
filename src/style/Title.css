@@ -1,0 +1,114 @@
+.title {
+    height: 55px;
+    /* background-color: #1f1b5c; */
+    width: 100vw;
+}
+
+.title_land {
+    display: block-inline;
+    /* float: left; */
+    height: 100%;
+    /* padding: 0 50px; */
+    margin: 0 auto;
+    /* width: 1000px */
+}
+
+.title .icon {
+    height: 55px;
+    line-height: 55px;
+    margin: 0 200px;
+}
+
+.title .icon span {
+    font-size: 20px
+}
+
+.title ul {
+    height: 55px;
+    line-height: 55px;
+    margin: 0 auto
+}
+
+.title .title_land .icon {
+    width: 125px;
+    /* float: left; */
+    position: relative;
+    top: 0px;
+    height: 55px;
+    text-align: center;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.title .title_land .icon img {
+    float: left;
+    height: 55px;
+    text-align: center;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.title .title_land nav {
+    display: block;
+    /* float: left; */
+    left: 300px;
+    position: absolute;
+    top: 0;
+    height: 55px;
+    width: 600px
+}
+
+.title ul li {
+    float: left;
+    padding: 0 20px;
+    /* margin: 0 20px; */
+    font-size: 18px;
+    position: relative;
+    list-style: none;
+}
+
+.drop-down-content {
+    padding: 0;
+    display: none;
+    /*position: absolute;*/
+}
+
+.title nav ul .nav_item_drop-down:hover .drop-down-content {
+    display: block;
+    /* float: right */
+    padding: 0 0px;
+    position: absolute;
+}
+
+.drop-down-content a {
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background-color: #2f3e45;
+}
+
+.drop-down-content li {
+    /* float: left; */
+    padding: 0 0px;
+    margin: 0 0px;
+    left: -20px;
+    font-size: 18px;
+    position: relative;
+    list-style: none;
+}
+
+.menu {
+    /* float: left; */
+    position: absolute;
+    top: 0;
+    left: 800px;
+    width: 350px;
+    /* padding-left: 100px */
+}
+
+
+/* .menu a {} */
