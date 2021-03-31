@@ -13,11 +13,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class Presentation {
-  static Presentation _instance;
+  static Presentation? _instance;
 
   Presentation._internal();
 
-  factory Presentation.instance() => getInstance();
+  factory Presentation.instance() => getInstance()!;
 
   //flutter端推送到原生消息通道
   static const MethodChannel _channel = const MethodChannel('presentation');
@@ -33,7 +33,7 @@ class Presentation {
       new HashMap<String, StreamController<dynamic>>();
 
   //单例初始化获取Android端DisplayManager
-  static Presentation getInstance() {
+  static Presentation? getInstance() {
     if (_instance == null) {
       _instance = Presentation._internal();
     }
@@ -44,7 +44,7 @@ class Presentation {
     _channel.invokeMethod("init");
     _eventChannel.receiveBroadcastStream().listen((event) {
       try {
-        _dispatchMap[event["method"]].sink.add(event);
+        _dispatchMap[event["method"]]!.sink.add(event);
       } catch (e) {
         throw new Exception(e);
       }
@@ -58,7 +58,7 @@ class Presentation {
 
   Stream<dynamic> get resPonseMessage => _streamController;
 
-  Future<bool> setContentView(int index, String rout) async {
+  Future<bool?> setContentView(int index, String rout) async {
     return await _channel.invokeMethod(
         "setContentView", <String, dynamic>{"index": index, "rout": rout});
   }
